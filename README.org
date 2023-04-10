@@ -1,6 +1,6 @@
 #+TITLE: Axon
 
-An hostable front-end for org-roam and org-mode files
+Hostable front-end for org-roam and org-mode files
 
 ** Installation
 *** Manual
