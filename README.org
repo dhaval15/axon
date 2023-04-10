@@ -9,6 +9,7 @@ git clone https://github.com/dhaval15/axon.git
 cd axon
 pip install -r requirements.txt
 # create .env file
+./migrate.sh
 ./run-server.sh
 #+end_src
 

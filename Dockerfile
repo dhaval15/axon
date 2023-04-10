@@ -33,14 +33,14 @@ RUN find /usr/local \
 COPY manage.py /app
 COPY axon_server/. /app/axon_server
 COPY orgroam/. /app/orgroam
-COPY run-production.sh /app
+COPY run-server.sh /app
 COPY migrate.sh /app
 
 COPY --from=ui /vue-app/dist /app/axon_ui/dist
-RUN chmod +x /app/run-production.sh
+RUN chmod +x /app/run-server.sh
 RUN chmod +x /app/migrate.sh
 
 # Start server.
 EXPOSE 8080
 WORKDIR /app
-CMD ["./run-production.sh"]
+CMD ["./run-server.sh"]
