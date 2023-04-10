@@ -2,6 +2,29 @@
 
 An hostable front-end for org-roam and org-mode files
 
+** Installation
+*** Manual
+#+begin_src bash
+git clone https://github.com/dhaval15/axon.git
+cd axon
+pip install -r requirements.txt
+# create .env file
+./run-server.sh
+#+end_src
+
+#+begin_src bash
+DEBUG=True/False
+SECRET_KEY=your-secret-key
+ORG_ROAM_DB= # absolute path of org-roam.db
+ORG_ROAM_DIRECTORY= # absolute path of org roam directory
+ORG_ROAM_ORIG_DIRECTORY= # same as above unless, using docker containers
+ALLOWED_HOSTS= # host names separated by comma
+CSRF_TRUSTED_ORIGINS= # urls separated by comma
+#+end_src
+
+*** Docker
+Yet to come
+
 ** Motivation
 I have  been using org roam  for writing my notes  and much more
 stuff. Orgmode  is great  on emacs but  outside emacs,  there is
