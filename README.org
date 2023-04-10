@@ -1,0 +1,14 @@
+#+TITLE: Axon
+
+An hostable front-end for org-roam and org-mode files
+
+** Motivation
+I have  been using org roam  for writing my notes  and much more
+stuff. Orgmode  is great  on emacs but  outside emacs,  there is
+limited  support (I  know there  is html  export and  publishing
+utility) But this tool is not meant for publishing.
+
+** Features
+- [ ] OrgRoam Network (simmilar to org-roam-ui)
+- [ ] Review system using org foot notes
+- [ ] Dashboard and Saved queries
